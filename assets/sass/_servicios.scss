@@ -1,0 +1,43 @@
+.hijo2 { 
+    .servicios{
+    color:aliceblue;
+    text-shadow: red 0 -2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2% 0% 6% 15%;
+    }
+}
+.listaServicios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    ul li{
+        color: aliceblue;
+        font-family: 'Russo One', sans-serif;
+        font-size: 2rem;
+        text-shadow: red 0 -2px;
+        margin-bottom: 30px;
+    }
+}
+#instagram{
+    width: 80px;
+    margin-right: 20px;
+    &:hover{
+        transform:scale(1.05)
+    }
+}
+#youtube{
+    width: 122px;
+    margin-right: 20px;
+    &:hover{
+        transform:scale(1.05)
+    }
+}
+#whatsapp{
+    width: 82px;
+    border-radius: 10px;
+    &:hover{
+        transform:scale(1.05)
+    }
+}

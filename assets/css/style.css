@@ -1,0 +1,978 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.padre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 25% 72% auto;
+  grid-template-areas: "header header header" "hero   hero   hero" "footer footer footer";
+  font-family: "Russo One", sans-serif;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+.padre .hijo {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.padre .hijo2 {
+  grid-area: hero;
+  min-height: 77vh;
+  background-color: rgb(34, 9, 9);
+  background-image: url(../img/fondo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.padre .hijo3 {
+  grid-area: footer;
+}
+
+.hijo2 .heroIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: aliceblue;
+  font-family: "Russo One" sans-serif;
+  font-size: 3rem;
+  text-shadow: red 0 -2px;
+}
+.fotoControlRoom, .fotoPin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+  border-radius: 40px;
+}
+
+.logo {
+  height: 100px;
+  animation: flash;
+  animation-duration: 0.5s;
+}
+
+.navBar {
+  display: flex;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-shadow: red 0 -2px;
+}
+.navBar li a {
+  margin: 30px;
+  font-size: 2rem;
+  color: aliceblue;
+  justify-content: center;
+}
+
+/* HOOVER */
+.link a {
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+}
+.link a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: rgb(255, 30, 30);
+  /*animacion de derecha a izquierda*/
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+.link a:hover::after {
+  /*animacion de derecha a izquierda*/
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.hijo2 .heroEstudio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+.hijo2 .heroEstudio .fotoSala {
+  display: flex;
+  flex-direction: row wrap;
+  border-radius: 40px;
+  width: 700px;
+  height: 576px;
+  margin-left: 20px;
+}
+.hijo2 .heroEstudio .fotoTv {
+  display: flex;
+  flex-direction: row wrap;
+  border-radius: 40px;
+  width: 700px;
+  height: 576px;
+  margin-right: 20px;
+}
+.hijo2 .heroEstudio .textoEstudio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.hijo2 .heroEstudio h1, .hijo2 .heroEstudio .heroIndex h2, .hijo2 .heroIndex .heroEstudio h2 {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Russo One", sans-serif;
+  font-size: 3rem;
+  text-shadow: red 0 -2px;
+}
+.hijo2 .heroEstudio h2 {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Russo One", sans-serif;
+  font-size: 3rem;
+  text-shadow: red 0 -2px;
+}
+
+.redes #instagram {
+  width: 80px;
+  margin-right: 20px;
+}
+.redes #instagram:hover {
+  transform: scale(1.05);
+}
+.redes #youtube {
+  width: 122px;
+  margin-right: 20px;
+}
+.redes #youtube:hover {
+  transform: scale(1.05);
+}
+.redes #whatsapp {
+  width: 82px;
+  border-radius: 10px;
+}
+.redes #whatsapp:hover {
+  transform: scale(1.05);
+}
+
+.hijo3 {
+  display: grid;
+  grid-area: footer;
+  justify-content: right;
+  background-color: transparent;
+  color: aliceblue;
+  width: 100%;
+}
+.hijo3 p {
+  font-size: 1rem;
+  padding: 12px 30px 0px 0px;
+  text-shadow: red 0 -2px;
+}
+
+form.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(165, 42, 42, 0.186);
+  padding: 2% 20%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-left: 9.5%;
+  border-radius: 20px;
+  width: 80%;
+}
+
+section form input {
+  margin-bottom: 20px;
+  font-family: "Russo One", sans-serif;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  font-family: "Russo One", sans-serif;
+}
+
+.button {
+  padding: 10px;
+  margin-top: 30px;
+  color: brown;
+  font-weight: bold;
+  background-color: rgba(179, 174, 174, 0.299);
+  color: #fff;
+  background-color: #730000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #ff0000;
+}
+
+.button:active {
+  background-color: #422b2b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.hijo2 .servicios {
+  color: aliceblue;
+  text-shadow: red 0 -2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2% 0% 6% 15%;
+}
+
+.listaServicios {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.listaServicios ul li {
+  color: aliceblue;
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
+  text-shadow: red 0 -2px;
+  margin-bottom: 30px;
+}
+
+#instagram {
+  width: 80px;
+  margin-right: 20px;
+}
+#instagram:hover {
+  transform: scale(1.05);
+}
+
+#youtube {
+  width: 122px;
+  margin-right: 20px;
+}
+#youtube:hover {
+  transform: scale(1.05);
+}
+
+#whatsapp {
+  width: 82px;
+  border-radius: 10px;
+}
+#whatsapp:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 576px) {
+  .hijo .logo {
+    padding: 10px;
+  }
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .navBar li a {
+    font-size: 0.9rem;
+  }
+  .hijo2 .heroIndex {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
+    width: 10rem;
+  }
+  .hijo2 .heroIndex .fotoPin {
+    width: 10rem;
+  }
+  .hijo2 .heroEstudio {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .hijo2 .heroEstudio .textoEstudio {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .hijo2 .heroEstudio .fotoSala {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .hijo2 .heroEstudio .fotoTv {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .hijo2 .listaServicios ul li {
+    padding: 11px;
+    font-size: 1.3rem;
+  }
+  .hijo2 .galeriaTitulo {
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .hijo2 .container {
+    margin: auto;
+    background-color: rgba(166, 1, 1, 0.292);
+    width: 300px;
+    padding: 30px;
+  }
+  .hijo2 ul.slider {
+    position: relative;
+    width: 250px;
+    height: 300px;
+  }
+  .hijo2 ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    background: rgba(129, 27, 27, 0.555);
+  }
+  .hijo2 ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .hijo2 .equiposTitulo {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .hijo2 .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+    padding: 0px;
+  }
+  .hijo2 .redes #instagram {
+    width: 50px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #instagram:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #youtube {
+    width: 92px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #youtube:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #whatsapp {
+    width: 52px;
+    border-radius: 10px;
+  }
+  .hijo2 .redes #whatsapp:hover {
+    transform: scale(1.05);
+  }
+  .hijo3 p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 776px) {
+  .hijo .logo {
+    padding: 10px;
+  }
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .navBar li a {
+    font-size: 0.9rem;
+  }
+  .hijo2 .heroIndex {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
+    width: 10rem;
+  }
+  .hijo2 .heroIndex .fotoPin {
+    width: 10rem;
+  }
+  .hijo2 .heroEstudio {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .hijo2 .heroEstudio .textoEstudio {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .hijo2 .heroEstudio .fotoSala {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .hijo2 .heroEstudio .fotoTv {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .hijo2 .listaServicios ul li {
+    padding: 11px;
+    font-size: 1.3rem;
+  }
+  .hijo2 .galeriaTitulo {
+    display: flex;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .hijo2 .container {
+    margin: auto;
+    background-color: rgba(166, 1, 1, 0.292);
+    width: 500px;
+    padding: 20px;
+  }
+  .hijo2 ul.slider {
+    position: relative;
+    width: 460px;
+    height: 300px;
+  }
+  .hijo2 ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    background: rgba(129, 27, 27, 0.555);
+  }
+  .hijo2 ul.slider li img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+  .hijo2 .equiposTitulo {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .hijo2 .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+    padding: 0px;
+  }
+  .hijo2 .redes #instagram {
+    width: 50px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #instagram:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #youtube {
+    width: 92px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #youtube:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #whatsapp {
+    width: 52px;
+    border-radius: 10px;
+  }
+  .hijo2 .redes #whatsapp:hover {
+    transform: scale(1.05);
+  }
+  .hijo3 p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 777px) and (max-width: 992px) {
+  .hijo .logo {
+    padding: 10px;
+  }
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0px;
+  }
+  .navBar li a {
+    font-size: 0.9rem;
+  }
+  .hijo2 .heroIndex {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
+    width: 10rem;
+  }
+  .hijo2 .heroIndex .fotoPin {
+    width: 10rem;
+  }
+  .hijo2 .heroEstudio {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .hijo2 .heroEstudio .textoEstudio {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+  .hijo2 .heroEstudio .fotoSala {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .hijo2 .heroEstudio .fotoTv {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+  }
+  .hijo2 .listaServicios ul li {
+    padding: 5px;
+    font-size: 1.6rem;
+  }
+  .hijo2 ul.slider {
+    position: relative;
+    width: 660px;
+    height: 300px;
+  }
+  .hijo2 ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    background: rgba(129, 27, 27, 0.555);
+  }
+  .hijo2 ul.slider li img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+  .hijo2 .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+    padding: 0px;
+  }
+  .hijo2 .redes #instagram {
+    width: 50px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #instagram:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #youtube {
+    width: 92px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #youtube:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #whatsapp {
+    width: 52px;
+    border-radius: 10px;
+  }
+  .hijo2 .redes #whatsapp:hover {
+    transform: scale(1.05);
+  }
+  .hijo3 p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .hijo .logo {
+    padding: 10px;
+  }
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .navBar li a {
+    font-size: 1.3rem;
+  }
+  .hijo2 .heroIndex {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+  }
+  .hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
+    width: 20rem;
+  }
+  .hijo2 .heroIndex .fotoPin {
+    width: 20rem;
+  }
+  .hijo2 .heroEstudio {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+  }
+  .hijo2 .heroEstudio .textoEstudio {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+  .hijo2 .heroEstudio .fotoSala {
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+  }
+  .hijo2 .heroEstudio .fotoTv {
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+  }
+  .hijo2 .listaServicios ul li {
+    font-size: 1.8rem;
+  }
+  .hijo2 ul.slider {
+    position: relative;
+    width: 900px;
+    height: 300px;
+  }
+  .hijo2 ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    background: rgba(129, 27, 27, 0.555);
+  }
+  .hijo2 ul.slider li img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+  .hijo2 .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+    padding: 0px;
+  }
+  .hijo2 .redes #instagram {
+    width: 60px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #instagram:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #youtube {
+    width: 102px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #youtube:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #whatsapp {
+    width: 62px;
+    border-radius: 10px;
+  }
+  .hijo2 .redes #whatsapp:hover {
+    transform: scale(1.05);
+  }
+  .hijo3 p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20 0;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .hijo .logo {
+    padding: 10px;
+  }
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .navBar li a {
+    font-size: 1.8rem;
+  }
+  .hijo2 .heroIndex {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+  }
+  .hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
+    width: 20rem;
+  }
+  .hijo2 .heroIndex .fotoPin {
+    width: 20rem;
+  }
+  .hijo2 .heroEstudio {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+  }
+  .hijo2 .heroEstudio .textoEstudio {
+    font-size: 1.7rem;
+    padding: 20px;
+  }
+  .hijo2 .heroEstudio .fotoSala {
+    width: 25rem;
+    height: 25rem;
+    margin: 0;
+  }
+  .hijo2 .heroEstudio .fotoTv {
+    width: 25rem;
+    height: 25rem;
+    margin: 0;
+  }
+  .hijo2 .listaServicios ul li {
+    font-size: 1.8rem;
+  }
+  .hijo2 .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+    padding: 0px;
+  }
+  .hijo2 .redes #instagram {
+    width: 70px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #instagram:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #youtube {
+    width: 112px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #youtube:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #whatsapp {
+    width: 72px;
+    border-radius: 10px;
+  }
+  .hijo2 .redes #whatsapp:hover {
+    transform: scale(1.05);
+  }
+  .hijo3 p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20 0;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 0;
+  }
+  .navBar li a {
+    display: flex;
+    font-size: 2rem;
+    margin: 2.2vw;
+  }
+  .hijo2 .heroIndex {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+  }
+  .hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
+    width: 30rem;
+  }
+  .hijo2 .heroIndex .fotoPin {
+    width: 30rem;
+  }
+  .hijo2 .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+    padding: 0px;
+  }
+  .hijo2 .redes #instagram {
+    width: 70px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #instagram:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #youtube {
+    width: 112px;
+    margin-right: 20px;
+  }
+  .hijo2 .redes #youtube:hover {
+    transform: scale(1.05);
+  }
+  .hijo2 .redes #whatsapp {
+    width: 72px;
+    border-radius: 10px;
+  }
+  .hijo2 .redes #whatsapp:hover {
+    transform: scale(1.05);
+  }
+  .hijo3 p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    font-size: 0.7rem;
+  }
+}
+.galeriaTitulo {
+  color: aliceblue;
+  text-shadow: red 0 -2px;
+  margin: 2%;
+}
+
+.equiposTitulo {
+  margin: 2%;
+}
+
+.container {
+  margin: auto;
+  background-color: rgba(166, 1, 1, 0.292);
+  width: 1000px;
+  padding: 30px;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.slider {
+  position: relative;
+  width: 935px;
+  height: 300px;
+}
+ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+  background: rgba(129, 27, 27, 0.555);
+}
+ul.slider li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
+  text-align: center;
+  margin: 20px;
+}
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+.menu li a {
+  display: inline-block;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  background-color: rgba(59, 6, 249, 0.331);
+  margin-top: 20px;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  border-radius: 100%;
+}
+.menu li a:hover {
+  color: rgb(255, 234, 0);
+  text-decoration: none;
+  background-color: rgba(59, 6, 249, 0.569);
+}
+
+.hijo2 .equiposTitulo {
+  color: aliceblue;
+  text-shadow: red 0 -2px;
+}/*# sourceMappingURL=style.css.map */

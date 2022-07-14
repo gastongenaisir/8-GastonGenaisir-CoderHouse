@@ -1,0 +1,27 @@
+.hijo2 {
+    .heroIndex{
+        display: flex;
+        @include flex (row, space-evenly, center, wrap);
+        margin-top: 40px;
+        h1{
+            display: flex;
+            @include flex (row, center, center, wrap);
+            color: map-get($titulo , color);
+            font-family: map-get($titulo , family);
+            font-size: map-get($titulo , fSize);
+            text-shadow: map-get($titulo , tShadow);
+        }
+        h2{
+            @extend h1
+        }
+    }
+}
+.fotoControlRoom{
+    display: flex;
+    @include flex (row, center, center, wrap);
+    width: 30%;
+    border-radius: 40px;
+}
+.fotoPin{
+    @extend .fotoControlRoom
+}

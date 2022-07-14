@@ -1,0 +1,42 @@
+.logo{
+    height: 100px;
+    animation: flash;
+    animation-duration: 0.5s;
+}
+.navBar{
+    display: flex;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-shadow: red 0 -2px;
+    li a{
+        margin: 30px;
+        font-size: 2rem;
+        color: aliceblue;
+        justify-content: center;
+    }
+}
+/* HOOVER */
+.link a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background: rgb(255, 30, 30);
+        /*animacion de derecha a izquierda*/
+        transform-origin: center;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+    &:hover::after{
+        /*animacion de derecha a izquierda*/
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+}

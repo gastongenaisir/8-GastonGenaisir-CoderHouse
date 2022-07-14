@@ -1,0 +1,43 @@
+form.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(165, 42, 42, 0.186);
+    padding: 2% 20%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 9.5%;
+    border-radius: 20px;
+    width: 80%;
+}
+section form input{
+    margin-bottom: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    font-family: 'Russo One', sans-serif;
+}
+.button{
+    padding: 10px;
+    margin-top: 30px;
+    color: brown;
+    font-weight: bold;
+    background-color:rgba(179, 174, 174, 0.299);
+    color: #fff;
+    background-color: #730000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #ff0000
+}
+.button:active{
+    background-color: #422b2b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

@@ -1,0 +1,13 @@
+.hijo3{
+    display: grid;
+    grid-area: footer;
+    justify-content: right;
+    background-color: transparent;
+    color: aliceblue;
+    width: 100%;
+    p{
+        font-size: 1rem;
+        padding: 12px 30px 0px 0px;
+        text-shadow: red 0 -2px;
+    }
+}
