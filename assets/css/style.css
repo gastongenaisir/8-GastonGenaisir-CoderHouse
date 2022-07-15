@@ -19,6 +19,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  padding: 10px;
 }
 .padre .hijo2 {
   grid-area: hero;
@@ -41,11 +42,6 @@
   margin-top: 40px;
 }
 .hijo2 .heroIndex h1, .hijo2 .heroIndex h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   color: aliceblue;
   font-family: "Russo One" sans-serif;
   font-size: 3rem;
@@ -153,25 +149,25 @@
   text-shadow: red 0 -2px;
 }
 
-.redes #instagram {
-  width: 80px;
-  margin-right: 20px;
+.redes .instagram {
+  width: 5rem;
+  margin-right: 1.25rem;
 }
-.redes #instagram:hover {
+.redes .instagram:hover {
   transform: scale(1.05);
 }
-.redes #youtube {
-  width: 122px;
-  margin-right: 20px;
+.redes .youtube {
+  width: 7.625rem;
+  margin-right: 1.25rem;
 }
-.redes #youtube:hover {
+.redes .youtube:hover {
   transform: scale(1.05);
 }
-.redes #whatsapp {
-  width: 82px;
+.redes .whatsapp {
+  width: 5.125rem;
   border-radius: 10px;
 }
-.redes #whatsapp:hover {
+.redes .whatsapp:hover {
   transform: scale(1.05);
 }
 
@@ -285,9 +281,6 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
-  .hijo .logo {
-    padding: 10px;
-  }
   .navBar {
     display: flex;
     flex-direction: row;
@@ -344,13 +337,13 @@ textarea {
   .hijo2 .container {
     margin: auto;
     background-color: rgba(166, 1, 1, 0.292);
-    width: 300px;
+    width: 18.75rem;
     padding: 30px;
   }
   .hijo2 ul.slider {
     position: relative;
-    width: 250px;
-    height: 300px;
+    width: 15.625rem;
+    height: 8.75rem;
   }
   .hijo2 ul.slider li {
     position: absolute;
@@ -364,7 +357,7 @@ textarea {
   }
   .hijo2 ul.slider li img {
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     object-fit: cover;
   }
   .hijo2 .equiposTitulo {
@@ -378,25 +371,25 @@ textarea {
     align-items: center;
     padding: 0px;
   }
-  .hijo2 .redes #instagram {
+  .hijo2 .redes .instagram {
     width: 50px;
     margin-right: 20px;
   }
-  .hijo2 .redes #instagram:hover {
+  .hijo2 .redes .instagram:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #youtube {
+  .hijo2 .redes .youtube {
     width: 92px;
     margin-right: 20px;
   }
-  .hijo2 .redes #youtube:hover {
+  .hijo2 .redes .youtube:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #whatsapp {
+  .hijo2 .redes .whatsapp {
     width: 52px;
     border-radius: 10px;
   }
-  .hijo2 .redes #whatsapp:hover {
+  .hijo2 .redes .whatsapp:hover {
     transform: scale(1.05);
   }
   .hijo3 p {
@@ -408,9 +401,6 @@ textarea {
   }
 }
 @media screen and (min-width: 577px) and (max-width: 776px) {
-  .hijo .logo {
-    padding: 10px;
-  }
   .navBar {
     display: flex;
     flex-direction: row;
@@ -501,25 +491,25 @@ textarea {
     align-items: center;
     padding: 0px;
   }
-  .hijo2 .redes #instagram {
+  .hijo2 .redes .instagram {
     width: 50px;
     margin-right: 20px;
   }
-  .hijo2 .redes #instagram:hover {
+  .hijo2 .redes .instagram:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #youtube {
+  .hijo2 .redes .youtube {
     width: 92px;
     margin-right: 20px;
   }
-  .hijo2 .redes #youtube:hover {
+  .hijo2 .redes .youtube:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #whatsapp {
+  .hijo2 .redes .whatsapp {
     width: 52px;
     border-radius: 10px;
   }
-  .hijo2 .redes #whatsapp:hover {
+  .hijo2 .redes .whatsapp:hover {
     transform: scale(1.05);
   }
   .hijo3 p {
@@ -531,9 +521,6 @@ textarea {
   }
 }
 @media screen and (min-width: 777px) and (max-width: 992px) {
-  .hijo .logo {
-    padding: 10px;
-  }
   .navBar {
     display: flex;
     flex-direction: row;
@@ -608,25 +595,25 @@ textarea {
     align-items: center;
     padding: 0px;
   }
-  .hijo2 .redes #instagram {
+  .hijo2 .redes .instagram {
     width: 50px;
     margin-right: 20px;
   }
-  .hijo2 .redes #instagram:hover {
+  .hijo2 .redes .instagram:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #youtube {
+  .hijo2 .redes .youtube {
     width: 92px;
     margin-right: 20px;
   }
-  .hijo2 .redes #youtube:hover {
+  .hijo2 .redes .youtube:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #whatsapp {
+  .hijo2 .redes .whatsapp {
     width: 52px;
     border-radius: 10px;
   }
-  .hijo2 .redes #whatsapp:hover {
+  .hijo2 .redes .whatsapp:hover {
     transform: scale(1.05);
   }
   .hijo3 p {
@@ -638,9 +625,6 @@ textarea {
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  .hijo .logo {
-    padding: 10px;
-  }
   .navBar {
     display: flex;
     flex-direction: row;
@@ -715,25 +699,25 @@ textarea {
     align-items: center;
     padding: 0px;
   }
-  .hijo2 .redes #instagram {
+  .hijo2 .redes .instagram {
     width: 60px;
     margin-right: 20px;
   }
-  .hijo2 .redes #instagram:hover {
+  .hijo2 .redes .instagram:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #youtube {
+  .hijo2 .redes .youtube {
     width: 102px;
     margin-right: 20px;
   }
-  .hijo2 .redes #youtube:hover {
+  .hijo2 .redes .youtube:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #whatsapp {
+  .hijo2 .redes .whatsapp {
     width: 62px;
     border-radius: 10px;
   }
-  .hijo2 .redes #whatsapp:hover {
+  .hijo2 .redes .whatsapp:hover {
     transform: scale(1.05);
   }
   .hijo3 p {
@@ -745,9 +729,6 @@ textarea {
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
-  .hijo .logo {
-    padding: 10px;
-  }
   .navBar {
     display: flex;
     flex-direction: row;
@@ -802,25 +783,25 @@ textarea {
     align-items: center;
     padding: 0px;
   }
-  .hijo2 .redes #instagram {
+  .hijo2 .redes .instagram {
     width: 70px;
     margin-right: 20px;
   }
-  .hijo2 .redes #instagram:hover {
+  .hijo2 .redes .instagram:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #youtube {
+  .hijo2 .redes .youtube {
     width: 112px;
     margin-right: 20px;
   }
-  .hijo2 .redes #youtube:hover {
+  .hijo2 .redes .youtube:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #whatsapp {
+  .hijo2 .redes .whatsapp {
     width: 72px;
     border-radius: 10px;
   }
-  .hijo2 .redes #whatsapp:hover {
+  .hijo2 .redes .whatsapp:hover {
     transform: scale(1.05);
   }
   .hijo3 p {
@@ -865,25 +846,25 @@ textarea {
     align-items: center;
     padding: 0px;
   }
-  .hijo2 .redes #instagram {
+  .hijo2 .redes .instagram {
     width: 70px;
     margin-right: 20px;
   }
-  .hijo2 .redes #instagram:hover {
+  .hijo2 .redes .instagram:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #youtube {
+  .hijo2 .redes .youtube {
     width: 112px;
     margin-right: 20px;
   }
-  .hijo2 .redes #youtube:hover {
+  .hijo2 .redes .youtube:hover {
     transform: scale(1.05);
   }
-  .hijo2 .redes #whatsapp {
+  .hijo2 .redes .whatsapp {
     width: 72px;
     border-radius: 10px;
   }
-  .hijo2 .redes #whatsapp:hover {
+  .hijo2 .redes .whatsapp:hover {
     transform: scale(1.05);
   }
   .hijo3 p {
@@ -907,8 +888,8 @@ textarea {
 .container {
   margin: auto;
   background-color: rgba(166, 1, 1, 0.292);
-  width: 1000px;
-  padding: 30px;
+  width: 62.5rem;
+  padding: 1.875rem;
 }
 
 ul, li {
@@ -919,8 +900,8 @@ ul, li {
 
 ul.slider {
   position: relative;
-  width: 935px;
-  height: 300px;
+  width: 58.44rem;
+  height: 18.75rem;
 }
 ul.slider li {
   position: absolute;
@@ -934,7 +915,7 @@ ul.slider li {
 }
 ul.slider li img {
   width: 100%;
-  height: 300px;
+  height: 18.75rem;
   object-fit: cover;
 }
 

@@ -1,9 +1,4 @@
 @media screen and (max-width:576px){
-    .hijo{
-        .logo{
-            padding: 10px;
-        }
-    }
     .navBar{
         display: flex;
         flex-direction: row;
@@ -63,13 +58,13 @@
         .container{
             margin: auto;
             background-color: rgba(166, 1, 1, 0.292);
-            width: 300px;
+            width: 18.75rem;
             padding: 30px;
         }
         ul.slider{
             position: relative;
-            width: 250px;
-            height: 300px;
+            width: 15.625rem;
+            height: 8.75rem;
             li {
                 position: absolute;
                 left: 0px;
@@ -81,7 +76,7 @@
                 background:rgba(129, 27, 27, 0.555);
                 img{
                     width: 100%;
-                    height: 300px;
+                    height: 18.75rem;
                     object-fit: cover;
                 }
             }
@@ -96,21 +91,21 @@
             flex-direction: row wrap;
             align-items: center;
             padding: 0px;
-            #instagram{
+            .instagram{
                 width: 50px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #youtube{
+            .youtube{
                 width: 92px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #whatsapp{
+            .whatsapp{
                 width: 52px;
                 border-radius: 10px;
                 &:hover{
@@ -130,11 +125,6 @@
     }
 }
 @media screen  and (min-width:577px) and (max-width:776px){
-    .hijo{
-        .logo{
-            padding: 10px;
-        }
-    }
     .navBar{
         display: flex;
         flex-direction: row;
@@ -227,21 +217,21 @@
             flex-direction: row wrap;
             align-items: center;
             padding: 0px;
-            #instagram{
+            .instagram{
                 width: 50px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #youtube{
+            .youtube{
                 width: 92px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #whatsapp{
+            .whatsapp{
                 width: 52px;
                 border-radius: 10px;
                 &:hover{
@@ -261,11 +251,6 @@
     }
 }
 @media screen and (min-width:777px) and (max-width:992px){
-    .hijo{
-        .logo{
-            padding: 10px;
-        }
-    }
     .navBar{
         display: flex;
         flex-direction: row;
@@ -342,21 +327,21 @@
             flex-direction: row wrap;
             align-items: center;
             padding: 0px;
-            #instagram{
+            .instagram{
                 width: 50px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #youtube{
+            .youtube{
                 width: 92px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #whatsapp{
+            .whatsapp{
                 width: 52px;
                 border-radius: 10px;
                 &:hover{
@@ -376,11 +361,6 @@
     }
 }
 @media screen and (min-width:993px) and (max-width:1200px){
-    .hijo{
-        .logo{
-            padding: 10px;
-        }
-    }
     .navBar{
         display: flex;
         flex-direction: row;
@@ -457,21 +437,21 @@
             flex-direction: row wrap;
             align-items: center;
             padding: 0px;
-            #instagram{
+            .instagram{
                 width: 60px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #youtube{
+            .youtube{
                 width: 102px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #whatsapp{
+            .whatsapp{
                 width: 62px;
                 border-radius: 10px;
                 &:hover{
@@ -491,11 +471,6 @@
     }
 }
 @media screen and (min-width:1201px) and (max-width:1400px){
-    .hijo{
-        .logo{
-            padding: 10px;
-        }
-    }
     .navBar{
         display: flex;
         flex-direction: row;
@@ -552,21 +527,21 @@
             flex-direction: row wrap;
             align-items: center;
             padding: 0px;
-            #instagram{
+            .instagram{
                 width: 70px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #youtube{
+            .youtube{
                 width: 112px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #whatsapp{
+            .whatsapp{
                 width: 72px;
                 border-radius: 10px;
                 &:hover{
@@ -619,21 +594,21 @@
             flex-direction: row wrap;
             align-items: center;
             padding: 0px;
-            #instagram{
+            .instagram{
                 width: 70px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #youtube{
+            .youtube{
                 width: 112px;
                 margin-right: 20px;
                 &:hover{
                     transform:scale(1.05)
                 }
             }
-            #whatsapp{
+            .whatsapp{
                 width: 72px;
                 border-radius: 10px;
                 &:hover{

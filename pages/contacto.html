@@ -34,28 +34,34 @@
         <main class="hijo2">
         <section>
             <form action="" class="contacto">
+                <label for="nombre"></label>
                 <input type="text" name="nombre" placeholder="Nombre" class="nombre"required>
+                <label for="apellido"></label>
                 <input type="text" name="apellido" placeholder="Apellido">
-                <input type="text" name="telefono" placeholder="Teléfono">
+                <label for="telefono"></label>
+                <input type="number" name="telefono" placeholder="Teléfono">
+                <label for="correo"></label>
                 <input type="email" name="correo" placeholder="E-MAIL" required>
+                <label for="mensaje"></label>
                 <textarea name="mensaje" cols="30" rows="10" placeholder="Escribí acá tu mensaje..."></textarea>
-                <input type="submit" value="ENVIAR" class="button">
+                <button type="submit" value="ENVIAR" class="button">Enviar</button>
             </form>
-
+        </section>
+        <section>
             <ul class="redes">        
                 <li>
                     <a href="https://www.instagram.com/estudio_marsella/" target="_blank">
-                        <img src="../assets/img/instagram.png" alt="Instagram Estudio Marsella" id="instagram">
+                        <img src="../assets/img/instagram.png" alt="Instagram Estudio Marsella" class="instagram">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/channel/UCgiF_A2XCqCHrvzxkcnUJ1Q" target="_blank">
-                        <img src="../assets/img/youtube.png" alt="Youtube Estudio Marsella" id="youtube">
+                        <img src="../assets/img/youtube.png" alt="Youtube Estudio Marsella" class="youtube">
                     </a>
                 </li>
                 <li>    
                     <a href="https://wa.me/5491141445880" target="_blank">
-                        <img src="../assets/img/whatsapp.png" alt="Whatsapp Estudio Marsella" id="whatsapp">
+                        <img src="../assets/img/whatsapp.png" alt="Whatsapp Estudio Marsella" class="whatsapp">
                     </a>
                 </li>
             </ul>

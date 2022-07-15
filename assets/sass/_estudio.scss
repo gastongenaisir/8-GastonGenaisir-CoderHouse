@@ -47,22 +47,22 @@
     }
 }
 .redes{
-    #instagram{
-        width: 80px;
-        margin-right: 20px;
+    .instagram{
+        width: 5rem;
+        margin-right: 1.25rem;
         &:hover{
             transform:scale(1.05)
         }
     }
-    #youtube{
-        width: 122px;
-        margin-right: 20px;
+    .youtube{
+        width: 7.625rem;
+        margin-right: 1.25rem;
         &:hover{
             transform:scale(1.05)
         }
     }
-    #whatsapp{
-        width: 82px;
+    .whatsapp{
+        width: 5.125rem;
         border-radius: 10px;
         &:hover{
             transform:scale(1.05)
