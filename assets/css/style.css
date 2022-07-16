@@ -301,10 +301,10 @@ textarea {
     padding: 20px;
   }
   .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
-    width: 10rem;
+    width: 13rem;
   }
   .hijo2 .heroIndex .fotoPin {
-    width: 10rem;
+    width: 13rem;
   }
   .hijo2 .heroEstudio {
     display: flex;
@@ -316,13 +316,13 @@ textarea {
     padding: 20px;
   }
   .hijo2 .heroEstudio .fotoSala {
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
     margin: 0;
   }
   .hijo2 .heroEstudio .fotoTv {
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
     margin: 0;
   }
   .hijo2 .listaServicios ul li {
@@ -333,6 +333,7 @@ textarea {
     display: flex;
     font-size: 1rem;
     text-align: center;
+    margin: 25px;
   }
   .hijo2 .container {
     margin: auto;
@@ -368,6 +369,7 @@ textarea {
     justify-content: center;
     flex-direction: row wrap;
     align-items: center;
+    margin: 100px;
     padding: 0px;
   }
   .hijo2 .redes .instagram {
@@ -420,10 +422,10 @@ textarea {
     padding: 20px;
   }
   .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
-    width: 10rem;
+    width: 12rem;
   }
   .hijo2 .heroIndex .fotoPin {
-    width: 10rem;
+    width: 12rem;
   }
   .hijo2 .heroEstudio {
     display: flex;
@@ -435,13 +437,13 @@ textarea {
     padding: 20px;
   }
   .hijo2 .heroEstudio .fotoSala {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     margin: 0;
   }
   .hijo2 .heroEstudio .fotoTv {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     margin: 0;
   }
   .hijo2 .listaServicios ul li {
@@ -488,6 +490,7 @@ textarea {
     justify-content: center;
     flex-direction: row wrap;
     align-items: center;
+    margin: 2rem;
     padding: 0px;
   }
   .hijo2 .redes .instagram {
@@ -539,10 +542,10 @@ textarea {
     padding: 20px;
   }
   .hijo2 .heroIndex .fotoControlRoom, .hijo2 .heroIndex .fotoPin {
-    width: 10rem;
+    width: 13rem;
   }
   .hijo2 .heroIndex .fotoPin {
-    width: 10rem;
+    width: 13rem;
   }
   .hijo2 .heroEstudio {
     display: flex;
@@ -554,13 +557,13 @@ textarea {
     padding: 20px;
   }
   .hijo2 .heroEstudio .fotoSala {
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
     margin: 0;
   }
   .hijo2 .heroEstudio .fotoTv {
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
     margin: 0;
   }
   .hijo2 .listaServicios ul li {
@@ -592,6 +595,7 @@ textarea {
     justify-content: center;
     flex-direction: row wrap;
     align-items: center;
+    margin: 80px;
     padding: 0px;
   }
   .hijo2 .redes .instagram {
@@ -837,6 +841,25 @@ textarea {
   }
   .hijo2 .heroIndex .fotoPin {
     width: 30rem;
+  }
+  .hijo2 .heroEstudio {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+  }
+  .hijo2 .heroEstudio .textoEstudio {
+    font-size: 1.7rem;
+    padding: 20px;
+  }
+  .hijo2 .heroEstudio .fotoSala {
+    width: 40rem;
+    height: 28rem;
+    margin: 0;
+  }
+  .hijo2 .heroEstudio .fotoTv {
+    width: 40rem;
+    height: 28rem;
+    margin: 0;
   }
   .hijo2 .redes {
     display: flex;
